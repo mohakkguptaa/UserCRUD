@@ -22,7 +22,7 @@ public class User {
 
     private String phone;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Address> address;
 
     public User(int user_id, String name, int age, String phone, List<Address> address) {

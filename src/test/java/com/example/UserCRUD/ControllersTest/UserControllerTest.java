@@ -22,7 +22,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class UserControllerTest {
 
     @LocalServerPort
-    private int port = 8080;
+    private int port = 8082;
 
     @Autowired
     private TestRestTemplate testRestTemplate;
